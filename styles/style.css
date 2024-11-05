@@ -2,3 +2,44 @@
 @import url("home.css");
 @import url("results.css");
 @import url("cart_bookings.css");
+
+/* STYLE body et nav */
+
+/* général body */
+
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.decoration-none{
+    text-decoration: none;
+}
+
+.black{
+    color: black;
+}
+
+/* NAV */
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 2rem;
+}
+
+#logo{
+    color: #459e85;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+#cart, #booking{
+    color: #02002F;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+}
+

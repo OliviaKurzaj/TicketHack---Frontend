@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketHack</title>
-    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/style.css">
 
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <p>Tickethack</p>        
+        <div>
+            <a id="logo" class="decoration-none" href="#">Tickethack</a>       
         </div>
-        <div class="page-contenair">
-            <a href="cart.html">Cart</a>
-            <a href="bookings.html">bookings</a>
+        <div class="navigation-contenair">
+            <a href="cart.html" id="cart" class="decoration-none">Cart</a>
+            <a href="bookings.html" id="booking"  class="decoration-none">Bookings</a>
         </div>
     </nav>
 
@@ -24,15 +24,27 @@
             <p>Compare, book and enjoy cheap for train tickets: your joutney starts on Tickethack</p>
         </div>
         <div class="container">
-            <div class="search-container">
-                <input id="departureName" type="text" placeholder="Departure" />
-                <input id="arrivalName" type="text" placeholder="Arrival" />
+            <div class="content search-container">
+                <div class="input-content">
+                    <input id="departureName" type="text" placeholder="Departure" />
+                    <input id="arrivalName" type="text" placeholder="Arrival" />
+                </div>
+
                 <input type="date" id="start" name="trip-start" value="2024-07-22" min="2024-01-01" max="2050-12-31" />
+                
+                <div id="btn-search">Search</div>
             </div>
 
-            <div class="result-container">
+            <div class="result-container content">
+                
+                    <img id="train" src="./img/train.png" alt="train">
+                    <span class="trait"></span>
+                    <p class="black">It time to book your future trip</p>
+
+                <!-- <img id="notfound" src="./img/notfound.png" alt="not found"> -->
             </div>
         </div>
     </main>
+    <script src="./scripts/home.js"></script>
 </body>
 </html>
