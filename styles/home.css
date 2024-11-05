@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("/img/background.jpg");
+}
+
+.container{
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.search-container{
+    background-color: rgba(255, 255, 255, 0.257);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    width: 200px;
+}
+
+.result-container{
+    background-color: rgba(255, 255, 255, 0.257);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40vh;
+    width: 200px;
+}

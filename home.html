@@ -4,11 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TicketHack</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
 
 </head>
 <body>
     <nav>
+        <div class="logo">
+            <p>Tickethack</p>        
+        </div>
+        <div class="page-contenair">
+            <a href="cart.html">Cart</a>
+            <a href="bookings.html">bookings</a>
+        </div>
     </nav>
+
+    <main>
+        <div>
+            <h1>Explore the world effortlessly by train!</h1>
+            <p>Compare, book and enjoy cheap for train tickets: your joutney starts on Tickethack</p>
+        </div>
+        <div class="container">
+            <div class="search-container">
+                <input id="departureName" type="text" placeholder="Departure" />
+                <input id="arrivalName" type="text" placeholder="Arrival" />
+                <input type="date" id="start" name="trip-start" value="2024-07-22" min="2024-01-01" max="2050-12-31" />
+            </div>
+
+            <div class="result-container">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
