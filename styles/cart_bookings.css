@@ -32,7 +32,7 @@
 
 .result-wrap{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
 
@@ -40,8 +40,12 @@
     background-color: rgb(234, 234, 237);
 
     padding: 1rem;
+    margin-bottom: 1rem;
     width: 50vw;
 }
+/* .result-wrap > p{
+    width: 20px;
+} */
 
 .city-cart{
     display: flex;
