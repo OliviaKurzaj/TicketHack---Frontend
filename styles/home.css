@@ -9,7 +9,7 @@ main{
     color: whitesmoke;
     text-align: center;
 
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-position: center top;
     background-size: cover;
 }
@@ -36,7 +36,7 @@ h1{
     flex-direction: column;
 
     height: 50vh;
-    width: 300px;
+    width: 25vW;
 }
 
 /* CARD SEARCH */
@@ -75,9 +75,37 @@ input{
 }
 
 .result-container{
-    justify-content: center;
     gap: 1.5rem;
     align-items: center;
+    overflow: scroll;
+}
+
+.result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color :black;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+}
+
+.result-data{
+    padding : 1lh;
+}
+
+.btn-delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #459e85;
+    color : white;
+    border-radius: .5rem;
+    width: 60px;
+    height: 25px;
+    padding: .5rem;
+    text-align: center;
+
+    cursor: pointer;
 }
 
 #notfound{
