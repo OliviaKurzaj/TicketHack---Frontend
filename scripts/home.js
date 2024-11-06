@@ -24,14 +24,7 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             if (document.querySelector('#notfound')) {
                 document.querySelector('#notfound').remove();
             }
-            if (document.querySelector('.result')) {
-                var element = document.getElementById("parent");
-                while (element.firstChild) {
-                    element.removeChild(element.firstChild);
-                    // OR 
-                    element.firstChild.remove();
-                }
-            }
+
             result.trips.forEach((trip, index) => {
                 let departure = trip.departure;
                 let arrival = trip.arrival;
