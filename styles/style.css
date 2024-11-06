@@ -16,7 +16,22 @@
 }
 
 .black{
-    color: black;
+    color: #02002f;
+}
+
+.trait{
+    display: block;    
+    width: 80%;
+    height: 2px;
+
+    background-color: #459e85;
+}
+
+.green{
+    color: #459e85;
+}
+.bottom{
+    padding-bottom: 2rem;
 }
 
 /* NAV */

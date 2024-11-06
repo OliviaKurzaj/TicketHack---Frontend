@@ -43,9 +43,12 @@
     margin-bottom: 1rem;
     width: 50vw;
 }
-/* .result-wrap > p{
-    width: 20px;
-} */
+
+.wrapper-booking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .city-cart{
     display: flex;
@@ -76,4 +79,8 @@
     width: 60vw;
 
     color: whitesmoke;
+}
+
+.wrapper-booking{
+
 }

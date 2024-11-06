@@ -37,7 +37,8 @@ document.querySelector('#btn-search').addEventListener('click', async function (
                 let minutes = date.getMinutes(); // RECUPERER LES MINUTES
                 let stringDate = `${hours} : ${minutes}`
                 let price = trip.price;
-                let searchResult = `<div id="result${index}" class="result">
+                let searchResult = `
+                    <div id="result${index}" class="result">
                     <p class="result-data departure">${departure} > ${arrival}</p>
                     <p class="result-data date">${stringDate}</p>
                     <p class="result-data "><span class="price">${price}</span>€</p>
@@ -48,7 +49,11 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             addCart();
         } else {
             document.querySelector('#default-result').remove()
-            let noFindResult = `<img id="notfound" src="./img/notfound.png" alt="not found">`;
+            let noFindResult = `   <div id="default-result">
+                    <img id="train" src="./img/notfound.png" alt="train">
+                    <span class="trait"></span>
+                    <p class="black">Travel not found</p>
+                </div>`;
             document.querySelector('.result-container').innerHTML += noFindResult;
         }
     } catch (error) {
