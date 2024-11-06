@@ -17,7 +17,12 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             body: JSON.stringify(searchedTrip),
         });
         const result = await response.json();
+        console.log(result.result);
         if (result.result === true) {
+            const div = document.querySelector('.result-container'); 
+            while(div.firstChild) { 
+                div.removeChild(div.firstChild); 
+            } 
             if (document.querySelector('#default-result')) {
                 document.querySelector('#default-result').remove()
             }
@@ -45,7 +50,6 @@ document.querySelector('#btn-search').addEventListener('click', async function (
             document.querySelector('#default-result').remove()
             let noFindResult = `<img id="notfound" src="./img/notfound.png" alt="not found">`;
             document.querySelector('.result-container').innerHTML += noFindResult;
-            console.error("Erreur lors de la récupération des données", response.status);
         }
     } catch (error) {
         console.error("Erreur de la requête", error);
