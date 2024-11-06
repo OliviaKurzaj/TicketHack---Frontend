@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="styles/style.css">
 
 </head>
+
 <body>
     <nav>
         <div>
-            <a id="logo" class="decoration-none" href="#">Tickethack</a>       
+            <a id="logo" class="decoration-none" href="#">Tickethack</a>
         </div>
         <div class="navigation-contenair">
             <a href="cart.html" id="cart" class="decoration-none">Cart</a>
-            <a href="bookings.html" id="booking"  class="decoration-none">Bookings</a>
+            <a href="bookings.html" id="booking" class="decoration-none">Bookings</a>
         </div>
     </nav>
 
@@ -31,20 +33,24 @@
                 </div>
 
                 <input type="date" id="start" name="trip-start" value="2024-07-22" min="2024-01-01" max="2050-12-31" />
-                
+
                 <div id="btn-search">Search</div>
             </div>
 
             <div class="result-container content">
                 
-                <img id="train" src="./img/train.png" alt="train">
-                <span class="trait"></span>
-                <p class="black">It time to book your future trip</p>
+                <div id="default-result">
+                    <img id="train" src="./img/train.png" alt="train">
+                    <span class="trait"></span>
+                    <p class="black">It time to book your future trip</p>
+                </div>
 
-                <!-- <img id="notfound" src="./img/notfound.png" alt="not found"> -->
+
+                
             </div>
         </div>
     </main>
     <script src="./scripts/home.js"></script>
 </body>
+
 </html>
