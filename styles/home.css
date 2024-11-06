@@ -25,10 +25,10 @@ a{
 
 /* CARD CONTENT -> général */
 
-.container{
+.container-home{
     display: flex;
     gap: 4rem;
-    padding: 4rem;
+    padding-top: 4rem;
 }
 
 .content{
@@ -81,7 +81,7 @@ input{
 .result-container{
     gap: 1.5rem;
     align-items: center;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .result{
@@ -117,12 +117,30 @@ input{
 }
 
 #train{
-    width: 60%;
+    width: 80%;
 }
 
-.trait{
-    width: 80%;
-    height: 2px;
 
-    background-color: #459e85;
+#default-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+
+    height: 100%;
+}
+
+@media (max-width: 960px){
+    main{
+        height: auto;
+        padding-top: 3rem;
+    }
+    .container-home{
+        flex-direction: column;
+    }
+    .content{
+        margin: 2rem;
+    }
 }
